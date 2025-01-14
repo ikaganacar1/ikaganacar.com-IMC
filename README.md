@@ -2,6 +2,8 @@
 
 The source code for ikaganacar's Movie Collection (IMC), a personal website that helps users browse movies and TV shows, track what they've watched, and add items to their watchlist. The website utilizes The Movie Database (TMDb) for comprehensive and up-to-date movie and TV show information.
 
+Note: This repository is moved apart from ikaganacar.com repository. If you want to see how this project is created, you can still find all of the things you need at initial ikaganacar.com repo.
+
 ## Badges
 
 ### Frontend
