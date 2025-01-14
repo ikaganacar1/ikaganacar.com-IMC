@@ -1,0 +1,244 @@
+html, body {
+  height: 100%;  /* Ensure the body and html take up the full height */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #181C14;
+  color: #ECDFCC;
+  line-height: 1.6;
+  min-height: 100vh;
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  height: 100%;  /* Full height of the screen */
+  margin: 0 auto;
+  padding: 10px;
+}
+
+/* Profile Card */
+.card-client {
+  background: linear-gradient(145deg, #4a4a8f, #363669);
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  position: relative;
+  border-radius: 0;
+}
+
+.login-btn {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: rgba(255,255,255,0.15);
+  border: none;
+  padding: 0.5rem;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-btn svg {
+  width: 24px;
+  height: 24px;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.5rem;
+}
+
+.app-logo {
+  min-width: 60px;
+  height: 60px;
+  background: #8888cc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #363669;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.app-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #fff, #8888cc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-right: 3rem; /* Space for login button */
+}
+
+.app-tagline {
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.8);
+}
+
+.action-buttons {
+  display: flex;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  padding: 0.5rem;
+  flex-wrap: wrap;
+  width: 100%;
+  
+}
+
+.action-btn {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  padding: 0.75rem;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content:center   ;
+  gap: 0.5rem;
+  border-radius: 8px;
+}
+
+.action-btn svg {
+  width: 18px;
+  height: 18px;
+}
+
+/* Search Section */
+.search-section {
+  padding: 0.5rem;
+  margin: 0;
+  width: 100%;
+}
+
+.input-container {
+  position: relative;
+  width: 100%;
+}
+
+.input {
+  width: 100%;
+  padding: 1rem;
+  padding-right: 2.5rem;
+  background: #3C3D37;
+  border: 2px solid #697565;
+  border-radius: 8px;
+  color: #ECDFCC;
+  font-size: 1rem;
+}
+
+.icon {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 20px;
+  height: 20px;
+  color: #697565;
+}
+
+/* Activity Feed */
+.activities-section {
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.activity-card {
+  background: #3C3D37;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.activity-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+.user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #4a4a8f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.activity-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  color: #697565;
+  font-size: 0.9rem;
+}
+
+.rating {
+  color: #8888cc;
+  font-weight: 600;
+}
+
+/* Media Queries */
+@media (min-width: 640px) {
+  .container {
+      padding: 20px;
+  }
+
+  .card-client {
+      border-radius: 16px;
+      padding: 1.5rem;
+  }
+
+  .activity-card {
+      border-radius: 12px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+      max-width: 800px;
+      padding: 40px;
+  }
+
+  .card-client {
+      padding: 2rem;
+  }
+
+  .action-buttons {
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media (max-width: 768px) {
+  .action-buttons {
+      flex-direction: column;
+  }
+  
+  .action-btn {
+      width: 100%;
+      max-width: none;
+  }
+}
+a {
+  text-decoration: none !important;
+}
